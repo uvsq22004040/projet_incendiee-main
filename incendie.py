@@ -5,6 +5,6 @@
 # Jalis LACHEHAB
 # Rosary NITHIYANANTHAM
 # Anya BOUBCHIR
-# Nolwenn GAUTIER 
+# Nolwenn GAUTIER
 # https://github.com/uvsq22004040/projet_incendie.git
 #########################################################
