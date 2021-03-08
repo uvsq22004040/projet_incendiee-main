@@ -13,6 +13,7 @@
 # IMPORTATION DES LIBRAIRIES
 
 import tkinter as tk
+import random
 
 
 ############################
@@ -20,17 +21,22 @@ import tkinter as tk
 
 LARGEUR = 480
 HAUTEUR = 480
-COTE_CARRE = LARGEUR // 30
 COULEUR_FOND = "white"
+NB_LIGNES = 30
+NB_COL = 30
+COTE_CARRE = LARGEUR // NB_COL
 
 ############################
 # FONCTIONS
 
 def quadrillage():
-    """Affiche un quadrillage"""
-    for i in range(30):
-        for j in range(30):
-            canvas.create_rectangle((i*COTE_CARRE, j*COTE_CARRE),((i+1)*COTE_CARRE, (j+1)*COTE_CARRE), outline="black")
+    """Affiche un quadrillage de parcelles colorées"""
+    colors = ["yellow","green","blue"]
+    for i in range(NB_LIGNES):
+        for j in range(NB_COL):
+            canvas.create_rectangle((i*COTE_CARRE, j*COTE_CARRE),((i+1)*COTE_CARRE, (j+1)*COTE_CARRE), outline="black", fill=random.choices(colors))
+
+
 
 
 ############################
